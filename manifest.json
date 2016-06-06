@@ -1,0 +1,16 @@
+{
+"name":"Fix FB Emojis",
+"description":"Fix the FB emojis on messenger.com",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["*://www.messenger.com/*"],
+      "js": ["hexes.js", "emojiMap.js", "myscript.js"]
+    }
+  ],
+"web_accessible_resources": [
+    "emojis/*.png"
+  ],
+"icons": {"48": "icon.png"}
+}
