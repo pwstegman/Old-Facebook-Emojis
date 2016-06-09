@@ -1,16 +1,23 @@
 {
-"name":"Fix FB Emojis",
+"name":"Enable Old Facebook Emojis",
 "description":"Fix the FB emojis on messenger.com",
 "version":"1",
 "manifest_version":2,
 "content_scripts": [
     {
       "matches": ["*://www.messenger.com/*"],
-      "js": ["hexes.js", "emojiMap.js", "myscript.js"]
+      "js": ["hexes.js", "emojiMap.js", "main.js"]
     }
   ],
 "web_accessible_resources": [
     "emojis/*.png"
   ],
-"icons": {"48": "icon.png"}
+"icons": {"48": "icon.png"},
+"browser_action": {
+	"default_icon": {
+		"48": "icon.png"
+	},
+	"default_title": "Enable Old Facebook Emojis",
+	"default_popup": "popup.html"
+  }
 }
