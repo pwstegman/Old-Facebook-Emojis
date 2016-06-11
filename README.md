@@ -1,4 +1,4 @@
-# Old-Facebook-Emojis
+# Old Facebook Emojis
 A chrome extension to bring back the old Facebook emojis
 
 This extension will replace the new Facebook emojis with the old ones. Some newer emojis do not have an old emoji equivalent and therefore remain the same. If you want to define custom mappings of new emojis to old ones you can edit emojiMap.js. The extension currently only supports [messenger.com](https://www.messenger.com/).
